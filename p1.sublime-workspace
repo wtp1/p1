@@ -1,0 +1,248 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"everno",
+				"Evernote: List recent notes"
+			],
+			[
+				"evernote",
+				"Evernote Settings: Reconfigure Authorization"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 298.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Panda3D-1.9.0-x64/samples/simple-fps/Tut-Simple-FPS.py",
+		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/player.py",
+		"/C/Panda3D-1.9.0-x64/samples/demo-doors/game.py",
+		"/C/Panda3D-1.9.0-x64/samples/Roaming-Ralph/Tut-Roaming-Ralph.py",
+		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/__init__.py",
+		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/control.py",
+		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/location.py",
+		"/C/Panda3D-1.9.0-x64/samples/megarpg/modules/globals.py",
+		"/C/Panda3D-1.9.0-x64/samples/megarpg/main.py",
+		"/C/Panda3D-1.9.0-x64/samples/megarpg/modules/character.py",
+		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/main.py",
+		"/C/Panda3D-1.9.0-x64/samples/panda-rpg-tutorial-b3371a2b081e/main.py",
+		"/C/panda-rpg-tutorial-b3371a2b081e/main.py",
+		"/C/Panda3D-1.9.0-x64/samples/RagDoll/run.py",
+		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/main.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test3.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test1.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/meshgenerator.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test2.py",
+		"/C/Panda3D-1.9.0-x64/samples/Cartoon-Shader/Tut-Cartoon-Advanced.py",
+		"/C/Panda3D-1.9.0-x64/samples/Cartoon-Shader/Tut-Cartoon-Basic.py",
+		"/C/Panda3D-1.9.0-x64/pandac/PandaModules.py",
+		"/C/Panda3D-1.9.0-x64/direct/actor/Actor.py",
+		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/level.py",
+		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/door.py",
+		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping-II.py",
+		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/08_Contacts.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/torus.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/cube.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/character.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/26_SoftbodyAero.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/25_SoftbodyTetra.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/24_SoftbodyTri.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/23_SoftbodyPressure.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/22_SoftbodyCloth.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/21_SoftbodyRope.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/20_BowlAndEggs.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/19_BallInMaze.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/18_Vehicle.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/17_Character.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/16_GhostLocal.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/15_Ghost.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/14_GenericConstraint.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/13_ConeTwistConstraint.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/12_SphericalConstraint.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/11_SliderConstraint.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/10_HingeConstraint.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/09_Ccd.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/07_Raycast.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/06_FilteringPython.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/05_FilteringExtended.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/04_Filtering.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/01_Basics.py",
+		"/C/Panda3D-1.9.0-x64/samples/Loading/prim.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SublimePython.sublime-settings",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/02_Shapes.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SublimePythonIDE/SublimePython.sublime-settings",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/03_Heightfield.py",
+		"/C/Panda3D-1.9.0-x64/panda3d/__init__.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vDir=Vec3(self.j3.getP",
+			"setH",
+			"vec3",
+			"accept"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "p1.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
