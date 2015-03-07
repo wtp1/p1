@@ -8,17 +8,17 @@ from modules.globals import *
 
 class mouseControl(DirectObject):
     def __init__(self):
-        self.picker         = CollisionTraverser()            
-        self.pickerQ        = CollisionHandlerQueue()         
-        pickerCollN         = CollisionNode('mouseRay')       
-        pickerCamN          = base.camera.attachNewNode(pickerCollN) 
-        pickerCollN.setFromCollideMask(BitMask32.bit(1))         
-        pickerCollN.setIntoCollideMask(BitMask32.allOff())         
-        self.pickerRay      = CollisionRay()                
-        pickerCollN.addSolid(self.pickerRay)      
-        self.picker.addCollider(pickerCamN, self.pickerQ) 
-        self.accept('mouse1',self.pick)                
-    
+        self.picker         = CollisionTraverser()
+        self.pickerQ        = CollisionHandlerQueue()
+        pickerCollN         = CollisionNode('mouseRay')
+        pickerCamN          = base.camera.attachNewNode(pickerCollN)
+        pickerCollN.setFromCollideMask(BitMask32.bit(1))
+        pickerCollN.setIntoCollideMask(BitMask32.allOff())
+        self.pickerRay      = CollisionRay()
+        pickerCollN.addSolid(self.pickerRay)
+        self.picker.addCollider(pickerCamN, self.pickerQ)
+        self.accept('mouse1',self.pick)
+
     def pick(self):
         if base.mouseWatcherNode.hasMouse():
             mpos = base.mouseWatcherNode.getMouse()
@@ -30,14 +30,14 @@ class mouseControl(DirectObject):
 
 class heightChecker():
     def __init__(self):
-        self.picker         = CollisionTraverser()            
-        self.pickerQ        = CollisionHandlerQueue()         
-        pickerCollN         = CollisionNode('heightChecker')       
-        self.pickerNode     = render.attachNewNode(pickerCollN) 
-        pickerCollN.setFromCollideMask(BitMask32.bit(1))         
-        pickerCollN.setIntoCollideMask(BitMask32.allOff())         
-        self.pickerRay      = CollisionRay(0,0,300,0,0,-1)                
-        pickerCollN.addSolid(self.pickerRay)      
+        self.picker         = CollisionTraverser()
+        self.pickerQ        = CollisionHandlerQueue()
+        pickerCollN         = CollisionNode('heightChecker')
+        self.pickerNode     = render.attachNewNode(pickerCollN)
+        pickerCollN.setFromCollideMask(BitMask32.bit(1))
+        pickerCollN.setIntoCollideMask(BitMask32.allOff())
+        self.pickerRay      = CollisionRay(0,0,300,0,0,-1)
+        pickerCollN.addSolid(self.pickerRay)
         self.picker.addCollider(self.pickerNode, self.pickerQ)
     def getHeight(self,obj,pos):
         res=0
@@ -54,19 +54,19 @@ class cameraHandler(DirectObject):
         self.mx,self.my=0,0
         self.dragging=False
         self.hc=heightChecker()
-        
+
         self.j1 = render.attachNewNode('cam_j1')
         self.j2 = self.j1.attachNewNode('cam_j2')
         self.j2.setZ(5)
         self.j3 = self.j2.attachNewNode('cam_j3')
         self.j3.setY(-40)
-        
+
         self.accept("mouse3",self.drag,[True])
         self.accept("mouse3-up",self.drag,[False])
         self.accept("wheel_up", self.adjustCamDist,[0.9])
-        self.accept("wheel_down", self.adjustCamDist,[1.1])    
-        
-        taskMgr.add(self.dragTask,'dragTask')   
+        self.accept("wheel_down", self.adjustCamDist,[1.1])
+
+        taskMgr.add(self.dragTask,'dragTask')
 
     def turnCamera(self,tx,ty):
         self.j1.setH(self.j1.getH()+tx)
@@ -84,7 +84,7 @@ class cameraHandler(DirectObject):
 
     def dragTask(self,task):
         if base.mouseWatcherNode.hasMouse():
-            mpos = base.mouseWatcherNode.getMouse() 
+            mpos = base.mouseWatcherNode.getMouse()
             if self.dragging:
                 self.turnCamera((self.mx-mpos.getX())*100,(self.my-mpos.getY())*100)
             else:
@@ -101,7 +101,7 @@ class cameraHandler(DirectObject):
                     aspect=(1+self.mx-0.2)*5
                     self.j1.setX(self.j1,aspect)
             self.mx=mpos.getX()
-            self.my=mpos.getY()                               
+            self.my=mpos.getY()
         self.j1.setZ(self.hc.getHeight(render,self.j1.getPos()))
         deltaZ=self.j3.getZ(render)-(self.hc.getHeight(render,self.j3.getPos(render))+5)
         if deltaZ<0:
@@ -110,4 +110,4 @@ class cameraHandler(DirectObject):
         vDir=vDir*0.2
         base.camera.setPos(Vec3(base.camera.getPos())+vDir)
         base.camera.lookAt(self.j1.getPos(render))
-        return task.cont   
+        return task.cont
