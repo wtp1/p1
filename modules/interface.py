@@ -1,18 +1,25 @@
 # -*- coding: utf_8 -*-
 from direct.gui.OnscreenText import OnscreenText
 from panda3d.core import TextNode
+from direct.gui.DirectGui import DirectFrame
+
+
+myFrame = DirectFrame(frameColor=(0.5, 0.5, 0.5, 1),
+                      frameSize=(-1.2, 1.2, -1, -0.5),
+                      pos=(0, 0, 0))
 
 
 # Function to put instructions on the screen.
 def addInstructions1(pos, msg):
-    return OnscreenText(text=msg, style=1, fg=(1,1,1,1),
+    return OnscreenText(text=msg, style=1, fg=(1, 1, 1, 1),
                         pos=(-1.3, pos), align=TextNode.ALeft, scale = .05)
 
 
 # Function to put title on the screen.
 def addTitle1(text):
-    return OnscreenText(text=text, style=1, fg=(1,1,1,1),
-                        pos=(1.3,-0.95), align=TextNode.ARight, scale = .07)
+    return OnscreenText(text=text, style=1, fg=(1, 1, 1, 1),
+                        pos=(1.3, -0.95), align=TextNode.ARight, scale = .07)
+
 
 class ingameInterface():
     def __init__(self, charlist):

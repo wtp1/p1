@@ -35,7 +35,7 @@ class characterCollSystem():
 
 
 class character():
-    def __init__(self, modelstr, anims, trav, id, characterType, clist, intfc):
+    def __init__(self, modelstr, anims, trav, id, characterMode, clist, intfc):
         self.id = id
         self.root = render.attachNewNode('character'+str(id))
         self.model = Actor.Actor(modelstr, anims)
@@ -49,14 +49,18 @@ class character():
         self.collsys = characterCollSystem(self.root, trav, id)
         self.waypoints = []
         self.aitype = 0
+        self.characterMode = characterMode
         self.aistate = AIState()
         self.healthpoints = 100
-        self.characterType = characterType
         self.clist = clist
         self.intfc = intfc
+        self.clist.printInfo()
 
     def changeHP(self, deltaHP):
-        self.healthpoints += deltaHP
+        if (self.healthpoints + deltaHP) > 100:
+            self.healthpoints = 100
+        else:
+            self.healthpoints += deltaHP
 
     def getHP(self):
         return self.healthpoints
@@ -116,9 +120,9 @@ class CharactersList:
         else:
             return 0
 
-    def newCharacter(self, modelstr, anims, trav, characterType, clist, intfc):
+    def newCharacter(self, modelstr, anims, trav, characterMode, clist, intfc):
         newid = self.getNewId()
-        tmpch = character(modelstr, anims, trav, newid, characterType, clist, intfc)
+        tmpch = character(modelstr, anims, trav, newid, characterMode, clist, intfc)
         self.list.append(tmpch)
         return tmpch
 
@@ -130,17 +134,40 @@ class CharactersList:
 
     def getCurrentCharacterHP(self):
         for tmpch in self.list:
-            if tmpch.characterType == "current":
+            if tmpch.characterMode == 1:
                 return tmpch.healthpoints
         return -1000
 
+    def getCurrentCharacter(self):
+        for tmpch in self.list:
+            if tmpch.characterMode == 1:
+                return tmpch
+
     def randomChangeCurrentCharacterHP(self, task=None):
         for tmpch in self.list:
-            if tmpch.characterType == "current":
+            if tmpch.aitype == 0:
                 tmpch.changeHP(random.randint(-10, 10))
-                print self.getCurrentCharacterHP()
+                #print self.getCurrentCharacterHP()
         if task:
             return task.cont
+
+    def switchCharacter(self, id):
+        for tmpch in self.list:
+            if tmpch.aitype == 0:
+                if tmpch.id != id:
+                    tmpch.characterMode = 0
+                else:
+                    tmpch.characterMode = 1
+                #print "id:" + str(id) + \
+                #    ", characterMode:" + str(tmpch.characterMode)
+
+    def printInfo(self):
+        for tmpch in self.list:
+            print "id:" + str(tmpch.id) + ", aitype:" + str(tmpch.aitype) + \
+                ", characterMode:" + str(tmpch.characterMode)
+        print len(self.list)
+        print "\r"
+
 
 class AIState:
     timers = {}

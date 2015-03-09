@@ -15,8 +15,19 @@ player = clist.newCharacter('res/actors/gnum',
 								'walk': 'res/actors/gnum-walk'}
 							,
 							base.cTrav,
-							'current', clist, intfc)
+							1, clist, intfc)
 player.model.setScale(0.3)
+
+player1 = clist.newCharacter('res/actors/gnum',
+							{
+								'stand': 'res/actors/gnum-stand',
+								'walk': 'res/actors/gnum-walk'}
+							,
+							base.cTrav,
+							0, clist, intfc)
+player1.model.setScale(0.3)
+
+clist.switchCharacter(1)
 
 taskMgr.add(clist.update,'characters update')
 taskMgr.doMethodLater(0.5, aictrl.update, 'AI update')
