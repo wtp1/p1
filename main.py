@@ -23,6 +23,7 @@ loc.camera.j1.setPos(player.root.getPos())
 
 m = mouseControl(clist)
 b = buttonsControl(clist, loc)
+taskMgr.add(b.moveCamera, "moveTask")
 
 for i in xrange(3):
     tmpch = clist.newCharacter('res/actors/gnum',

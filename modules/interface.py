@@ -5,7 +5,7 @@ from direct.gui.DirectGui import DirectFrame
 
 
 myFrame = DirectFrame(frameColor=(0.5, 0.5, 0.5, 1),
-                      frameSize=(-1.2, 1.2, -1, -0.5),
+                      frameSize=(-1.3, 1.3, -1, -0.5),
                       pos=(0, 0, 0))
 
 
@@ -24,7 +24,8 @@ def addTitle1(text):
 class ingameInterface():
     def __init__(self, charlist):
         #self.title = addTitle1("Panda3D: Tutorial - Fireflies using Deferred Shading")
-        self.inst1 = addInstructions1(0.95, "HP:" + str(charlist.getCurrentCharacterHP()))
+        self.inst1 = addInstructions1(0.95, "HP:" +
+                                      str(charlist.getCurrentCharacterHP()))
         #self.inst2 = addInstructions1(0.90, "Up/Down: More / Fewer Fireflies (Count: unknown)")
         #self.inst3 = addInstructions1(0.85, "Right/Left: Bigger / Smaller Fireflies (Radius: unknown)")
         #self.inst4 = addInstructions1(0.80, "V: View the render-to-texture results")

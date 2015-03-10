@@ -31,4 +31,4 @@ clist.switchCharacter(1)
 
 taskMgr.add(clist.update,'characters update')
 taskMgr.doMethodLater(0.5, aictrl.update, 'AI update')
-taskMgr.doMethodLater(1, clist.randomChangeCurrentCharacterHP,'current character.s HP update')
+#taskMgr.doMethodLater(1, clist.randomChangeCurrentCharacterHP,'current character.s HP update')
