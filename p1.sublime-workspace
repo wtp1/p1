@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"WinSizeProportion",
+				"WinSizeProportionReverse	(statement)"
+			],
+			[
+				"se",
+				"self	(param)"
+			],
+			[
+				"rmove",
+				"removeNode	(function)"
+			],
+			[
+				"remov",
+				"removeCharacter"
+			],
+			[
 				"dr",
 				"dragging	(statement)"
 			],
@@ -20,10 +36,19 @@
 	"buffers":
 	[
 		{
-			"file": "tasks.TODO",
+			"file": "tasks1.TODO",
 			"settings":
 			{
-				"buffer_size": 4645,
+				"buffer_size": 6298,
+				"line_ending": "Windows",
+				"name": "Персонажи:"
+			}
+		},
+		{
+			"file": "/C/отпуск.TODO",
+			"settings":
+			{
+				"buffer_size": 677,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,31 +56,7 @@
 			"file": "modules/character.py",
 			"settings":
 			{
-				"buffer_size": 6574,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modules/interface.py",
-			"settings":
-			{
-				"buffer_size": 1363,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "modules/globals.py",
-			"settings":
-			{
-				"buffer_size": 1030,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "modules/control.py",
-			"settings":
-			{
-				"buffer_size": 6610,
+				"buffer_size": 7275,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,25 +64,70 @@
 			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 1275,
+				"buffer_size": 1354,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Panda3D-1.9.0-x64/samples/simple-fps/Tut-Simple-FPS.py",
+			"file": "modules/interface.py",
 			"settings":
 			{
-				"buffer_size": 5641,
+				"buffer_size": 3575,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modules/globals.py",
+			"settings":
+			{
+				"buffer_size": 1096,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "modules/control.py",
+			"settings":
+			{
+				"buffer_size": 6624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Panda3D-1.9.0-x64/samples/bullet-samples/18_Vehicle.py",
+			"settings":
+			{
+				"buffer_size": 6456,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
+		"last_filter": "tas",
 		"selected_items":
 		[
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
@@ -95,16 +141,8 @@
 				"Git: Add..."
 			],
 			[
-				"tas",
-				"Tasks: New document"
-			],
-			[
 				"tasks new",
 				"Tasks: New"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"everno",
@@ -113,10 +151,6 @@
 			[
 				"evernote",
 				"Evernote Settings: Reconfigure Authorization"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 464.0
@@ -150,11 +184,68 @@
 	],
 	"file_history":
 	[
-		"/C/p1/modules/location.py",
 		"/C/p1/main.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test2.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test3.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test4.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test5.py",
+		"/C/Panda3D-1.9.0-x64/samples/rocket-sample/test.py",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SublimePythonIDE/SublimePython.sublime-settings",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SublimePython.sublime-settings",
+		"/C/p1/tasks.TODO",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/Default (Windows).sublime-keymap",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/PlainTasks (Windows).sublime-settings",
+		"/C/www/wp-config.php",
+		"/C/p1/modules/character.py",
+		"/C/www/1.php",
+		"/C/users/jrwtp/appdata/local/temp/sublime-sftp-browse-1427538073/skysoft/home/skysoftk/public_html/wp-content/themes/zinc/template-sitemap.php",
+		"/C/www/wordpress/wp-content/themes/superstore/template-sitemap.php",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/skysoft",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/C/www/wordpress/wp-admin/plugin-install.php",
+		"/C/www/wordpress/wp-config.php",
+		"/C/tmp/unknown_uids.php",
+		"/C/www/wordpress/wp-content/themes/superstore/css/layout.css",
+		"/C/www/wordpress/wp-content/themes/superstore/header.php",
+		"/C/p1/modules/interface.py",
+		"/C/p1/modules/location.py",
+		"/C/p1/modules/sounds.py",
+		"/C/Panda3D-1.9.0-x64/samples/Music-Box/Tut-Music-Box.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/pgDemoControl.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/odebase.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demo_lod/lodtest.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demo_normalmap/volumetric.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demo_normalmap/normalmapping.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demo_nature/watevtfr2demo_new.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demo_nature/grass1ademo.py",
+		"/C/Games distr/Panda 3D/demomaster-0.8/demomaster.py",
+		"/C/Games distr/Panda 3D/demo_fish/fish1demo.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/camcapture.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/arbase.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/ar_demo1.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/ar_demo2.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/ar_demo_shadow1.py",
+		"/C/Games distr/Panda 3D/demo_artoolkit/ar_avi.py",
+		"/C/Panda3D-1.9.0-x64/samples/test1/test1.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/18_Vehicle.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/01_Basics.py",
+		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/26_SoftbodyAero.py",
+		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping-II.py",
+		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping.py",
+		"/C/Panda3D-1.9.0-x64/samples/Procedural-Cube/Tut-Procedural-Cube.py",
+		"/C/Panda3D-1.9.0-x64/samples/Particles/Tut-Steam-Example.py",
+		"/C/Panda3D-1.9.0-x64/samples/Particles/Tut-Particle-Panel.py",
+		"/C/Panda3D-1.9.0-x64/samples/megarpg/main.py",
+		"/C/Panda3D-1.9.0-x64/samples/simple-fps/Tut-Simple-FPS.py",
+		"/C/Panda3D-1.9.0-x64/samples/Loading/prim.py",
+		"/C/Panda3D-1.9.0-x64/samples/Distortion/Tut-Distortion.py",
+		"/C/Panda3D-1.9.0-x64/samples/Carousel/Tut-Carousel.py",
+		"/C/Panda3D-1.9.0-x64/samples/demo-doors/game.py",
 		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
 		"/C/Panda3D-1.9.0-x64/samples/Roaming-Ralph/Tut-Roaming-Ralph.py",
-		"/C/Panda3D-1.9.0-x64/samples/test1/test1.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/10_HingeConstraint.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/09_Ccd.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/08_Contacts.py",
@@ -164,26 +255,19 @@
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/04_Filtering.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/03_Heightfield.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/02_Shapes.py",
-		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/01_Basics.py",
 		"/C/Panda3D-1.9.0-x64/samples/Ball-in-Maze/Tut-Ball-in-Maze.py",
 		"/C/Panda3D-1.9.0-x64/samples/Asteroids/Tut-Asteroids.py",
-		"/C/Panda3D-1.9.0-x64/samples/Music-Box/Tut-Music-Box.py",
 		"/C/p1/modules/aicontroller.py",
 		"/C/Panda3D-1.9.0-x64/samples/Fireflies/Tut-Fireflies.py",
 		"/C/p1/modules/control.py",
 		"/C/Panda3D-1.9.0-x64/samples/Fractal-Plants/Tut-Fractal-Plants.py",
 		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/main.py",
-		"/C/Panda3D-1.9.0-x64/samples/test1/test3.py",
-		"/C/Panda3D-1.9.0-x64/samples/test1/test2.py",
 		"/C/p1/tasts.TODO",
-		"/C/Panda3D-1.9.0-x64/samples/simple-fps/Tut-Simple-FPS.py",
 		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/player.py",
-		"/C/Panda3D-1.9.0-x64/samples/demo-doors/game.py",
 		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/__init__.py",
 		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/control.py",
 		"/C/Panda3D-1.9.0-x64/samples/lesson_sample/modules/location.py",
 		"/C/Panda3D-1.9.0-x64/samples/megarpg/modules/globals.py",
-		"/C/Panda3D-1.9.0-x64/samples/megarpg/main.py",
 		"/C/Panda3D-1.9.0-x64/samples/megarpg/modules/character.py",
 		"/C/Panda3D-1.9.0-x64/samples/panda-rpg-tutorial-b3371a2b081e/main.py",
 		"/C/panda-rpg-tutorial-b3371a2b081e/main.py",
@@ -196,13 +280,10 @@
 		"/C/Panda3D-1.9.0-x64/direct/actor/Actor.py",
 		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/level.py",
 		"/C/Panda3D-1.9.0-x64/samples/demo-doors/Modules/door.py",
-		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping-II.py",
-		"/C/Panda3D-1.9.0-x64/samples/Texture-Swapping/Tut-Texture-Swapping.py",
 		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/torus.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/cube.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/character.py",
-		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/26_SoftbodyAero.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/25_SoftbodyTetra.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/24_SoftbodyTri.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/23_SoftbodyPressure.py",
@@ -210,7 +291,6 @@
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/21_SoftbodyRope.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/20_BowlAndEggs.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/19_BallInMaze.py",
-		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/18_Vehicle.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/17_Character.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/16_GhostLocal.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/15_Ghost.py",
@@ -218,17 +298,13 @@
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/13_ConeTwistConstraint.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/12_SphericalConstraint.py",
 		"/C/Panda3D-1.9.0-x64/samples/bullet-samples/11_SliderConstraint.py",
-		"/C/Panda3D-1.9.0-x64/samples/Loading/prim.py",
-		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SublimePython.sublime-settings",
-		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SublimePythonIDE/SublimePython.sublime-settings",
 		"/C/Panda3D-1.9.0-x64/panda3d/__init__.py",
 		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
 		"/C/Users/JRWTP/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -242,6 +318,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"character",
+			"ingameInterface",
+			"createBottomPanel",
+			"printInfo",
+			"aitype",
+			"zinc",
+			"navigation",
+			".home .flexslider li.slide .slide-content, .business .flexslider li.slide .slide-content",
+			"musicBoxSound",
+			"musicTime",
+			"lidOpenSfx",
+			"lidSfx",
+			"LerpFunc",
+			"lidCloseSfx",
+			"Parallel",
+			"LerpFunc",
+			"printInfo",
+			"model",
+			"load",
+			"NodePath",
+			"node",
+			"sky",
 			"load",
 			"seta",
 			"walk",
@@ -328,24 +426,116 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tasks.TODO",
+					"file": "tasks1.TODO",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4645,
+						"buffer_size": 6298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								742,
-								742
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Персонажи:",
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/PlainTasks/tasks.hidden-tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/отпуск.TODO",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
 							]
 						],
 						"settings":
@@ -353,86 +543,87 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
+							"incomplete_sync": null,
 							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "modules/character.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6574,
+						"buffer_size": 7275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2943,
-								2943
+								2259,
+								2259
 							]
 						],
 						"settings":
@@ -440,88 +631,362 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1168.0,
+						"translation.y": 634.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 200.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "modules/interface.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2797,
+								2797
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"spell_check": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1460.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "modules/globals.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								367
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "modules/interface.py",
+					"buffer": 6,
+					"file": "modules/control.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1363,
+						"buffer_size": 6624,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								244,
-								244
+								5870,
+								5870
 							]
 						],
 						"settings":
@@ -529,63 +994,67 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -596,188 +1065,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "modules/globals.py",
+					"buffer": 7,
+					"file": "/C/Panda3D-1.9.0-x64/samples/bullet-samples/18_Vehicle.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								844,
-								833
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 190.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "modules/control.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5642,
-								5642
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2603.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "main.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1275,
+						"buffer_size": 6456,
 						"regions":
 						{
 						},
@@ -793,41 +1086,41 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -838,113 +1131,29 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Panda3D-1.9.0-x64/samples/simple-fps/Tut-Simple-FPS.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1285,
-								1285
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_angle_content"
 							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 388.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -989,6 +1198,11 @@
 	{
 		"height": 0.0
 	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
 	"project": "p1.sublime-project",
 	"replace":
 	{
@@ -998,6 +1212,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1006,6 +1221,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1014,6 +1230,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],

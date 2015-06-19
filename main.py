@@ -2,7 +2,7 @@
 import direct.directbase.DirectStart
 from modules.location import gameLocation
 #from modules.character import character
-from pandac.PandaModules import Vec4,CollisionTraverser,BitMask32
+from pandac.PandaModules import Vec4, CollisionTraverser, BitMask32
 from modules.control import mouseControl, buttonsControl
 from modules.globals import *
 
@@ -19,6 +19,7 @@ box.find('**/+GeomNode').node().setIntoCollideMask(BitMask32.bit(2))
 
 player.root.setPos(25, 25, loc.terrain.getElevation(25, 25)*30+5)
 player1.root.setPos(27, 27, loc.terrain.getElevation(25, 25)*30+5)
+player2.root.setPos(25, 27, loc.terrain.getElevation(25, 25)*30+5)
 loc.camera.j1.setPos(player.root.getPos())
 
 m = mouseControl(clist)
@@ -27,11 +28,13 @@ taskMgr.add(b.moveCamera, "moveTask")
 
 for i in xrange(3):
     tmpch = clist.newCharacter('res/actors/gnum',
-    	{'stand':'res/actors/gnum-stand',
-    	 'walk' : 'res/actors/gnum-walk'},
-    	base.cTrav, 0, clist, intfc)
+                               {'stand': 'res/actors/gnum-stand',
+                               'walk': 'res/actors/gnum-walk'},
+                               base.cTrav, 0, clist, intfc)
     tmpch.model.setScale(0.3)
     tmpch.aitype = 1
     tmpch.root.setPos(45+i*5,45+i*5,loc.terrain.getElevation(45+i*5,45+i*5)*30+5)
+
+# self.personIcon = self.intfc.createPersonIcon(self.characterCounter,
 
 run()

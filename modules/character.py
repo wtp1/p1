@@ -1,8 +1,8 @@
 # -*- coding: utf_8 -*-
 from direct.actor import Actor
-from pandac.PandaModules import CollisionNode,CollisionHandlerQueue,\
-CollisionRay,CollisionSphere, CollisionRay, CollisionHandlerPusher, \
-CollisionTube
+from pandac.PandaModules import CollisionNode, CollisionHandlerQueue,\
+    CollisionSphere, CollisionRay, CollisionHandlerPusher, \
+    CollisionTube
 from pandac.PandaModules import BitMask32, Vec3
 from direct.interval.IntervalGlobal import *
 import random
@@ -35,7 +35,8 @@ class characterCollSystem():
 
 
 class character():
-    def __init__(self, modelstr, anims, trav, id, characterMode, clist, intfc):
+    def __init__(self, modelstr, anims, trav, id, characterMode,
+                 clist, intfc, characterCounter):
         self.id = id
         self.root = render.attachNewNode('character'+str(id))
         self.model = Actor.Actor(modelstr, anims)
@@ -54,7 +55,14 @@ class character():
         self.healthpoints = 100
         self.clist = clist
         self.intfc = intfc
-        self.clist.printInfo()
+        self.characterCounter = characterCounter
+        self.personIcon = self.intfc.createPersonIcon(self.characterCounter,
+                                                      self.id)
+        # self.clist.printInfo(self)
+        # self.clist.printInfo()
+
+    def removeCharacter(self):
+        self.model.removeNode()
 
     def changeHP(self, deltaHP):
         if (self.healthpoints + deltaHP) > 100:
@@ -79,40 +87,48 @@ class character():
         self.state = aname
 
     def update(self, task=None):
-        self.intfc.addInstructions(0.95, "HP:" + str(self.clist.getCurrentCharacterHP()))
+        #self.intfc.addInstructions(0.95, "HP:" +
+        #                           str(self.clist.getCurrentCharacterHP()))
 
-        if len(self.waypoints) > 0:
-            act, v = self.waypoints[0]
-            if act == 'goto':
-                v.setZ(self.root.getZ())
-                v = Vec3(v-self.root.getPos())
-                if v.length() < 0.3:
-                    del self.waypoints[0]
-                else:
-                    v.normalize()
-                    v2 = Vec3(self.root.getQuat().getForward())
-                    v2.normalize()
-                    a = v2.angleDeg(v)
-                    if a > 10:
-                        v3 = self.root.getRelativeVector(render, v)
-                        if v3.getX() > 0:
-                            a =- a
-                        self.root.setH(self.root.getH()+a*0.1)
-                    self.root.setPos(self.root, 0, 0.045, 0)
-                if self.state is not 'walk':
-                    self.switchAnimTo('walk', 0.2)
-        elif self.state is not 'stand':
-            self.switchAnimTo('stand', 0.3)
+        if self.healthpoints <= 0:
+            self.clist.removeCharacter(self.id)
+        else:
+            if len(self.waypoints) > 0:
+                act, v = self.waypoints[0]
+                if act == 'goto':
+                    v.setZ(self.root.getZ())
+                    v = Vec3(v-self.root.getPos())
+                    if v.length() < 0.3:
+                        del self.waypoints[0]
+                    else:
+                        v.normalize()
+                        v2 = Vec3(self.root.getQuat().getForward())
+                        v2.normalize()
+                        a = v2.angleDeg(v)
+                        if a > 10:
+                            v3 = self.root.getRelativeVector(render, v)
+                            if v3.getX() > 0:
+                                a =- a
+                            self.root.setH(self.root.getH()+a*0.1)
+                        self.root.setPos(self.root, 0, 0.045, 0)
+                    if self.state is not 'walk':
+                        self.switchAnimTo('walk', 0.2)
+            elif self.state is not 'stand':
+                self.switchAnimTo('stand', 0.3)
 
-        if self.collsys.GroundHandler.getNumEntries() > 0:
-            self.collsys.GroundHandler.sortEntries()
-            self.root.setZ(self.collsys.GroundHandler.getEntry(0).getSurfacePoint(render).getZ())
+            if self.collsys.GroundHandler.getNumEntries() > 0:
+                self.collsys.GroundHandler.sortEntries()
+                self.root.setZ(self.collsys.GroundHandler.getEntry(0).getSurfacePoint(render).getZ())
+
         if task:
             return task.cont
 
 
 class CharactersList:
     list = []
+
+    def __init__(self):
+        self.characterCount = 0
 
     def getNewId(self):
         if self.list:
@@ -121,10 +137,30 @@ class CharactersList:
             return 0
 
     def newCharacter(self, modelstr, anims, trav, characterMode, clist, intfc):
+        if(characterMode == 1):
+            self.characterCount += 1
+            characterCounter = self.characterCount
+        else:
+            characterCounter = 0
+
         newid = self.getNewId()
-        tmpch = character(modelstr, anims, trav, newid, characterMode, clist, intfc)
+        # print("def newCharacter")
+        # print("newid = " + str(newid))
+        # print("characterMode = " + str(characterMode))
+        # print("characterCounter = " + str(characterCounter))
+        tmpch = character(modelstr, anims, trav, newid, characterMode,
+                          clist, intfc, characterCounter)
         self.list.append(tmpch)
+        self.printInfo(tmpch)
         return tmpch
+
+    def removeCharacter(self, id):
+        for tmpch in self.list:
+            if tmpch.id != id:
+                tmpch.model.removeNode()
+                self.list.remove(tmpch)
+                print("character id:" + str(id) + "was died")
+        self.printInfo()
 
     def update(self, task=None):
         for tmpch in self.list:
@@ -161,12 +197,20 @@ class CharactersList:
                 #print "id:" + str(id) + \
                 #    ", characterMode:" + str(tmpch.characterMode)
 
-    def printInfo(self):
+    def printInfoCharacter(self, character):
+        return "id:" + str(character.id) + ", aitype:" + \
+               str(character.aitype) + \
+               ", characterMode:" + str(character.characterMode) + \
+               ", characterCounter:" + str(character.characterCounter) + \
+               ", HP:" + str(character.getHP())
+
+    def printInfo(self, character):
+        print("def printInfo")
         for tmpch in self.list:
-            print "id:" + str(tmpch.id) + ", aitype:" + str(tmpch.aitype) + \
-                ", characterMode:" + str(tmpch.characterMode)
-        print len(self.list)
-        print "\r"
+            print(self.printInfoCharacter(tmpch))
+
+        print("len(self.list) = " + str(len(self.list)))
+        print("\r")
 
 
 class AIState:
